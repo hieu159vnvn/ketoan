@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/libraries-ui.min.css">
+		<link rel="stylesheet" href="./css/all.min.css">
+		<title>Table</title>
+	</head>
+	<body class="m4-cloak h-vh-100">
+		<main class="navview" data-role="navview" data-toggle="#paneToggle" data-expanded="xl" data-compact="lg" data-active-state="true">
+			<section class="sidebar_wrapper navview-pane bg-blue fg-white z-5">
+				<div class="sidebar_header d-flex flex-align-center">
+					<button class="pull-button bg-blue-hover"><span class="mdi mdi-menu fg-white"></span></button>
+					<div class="sidebar_header-title text-bold enlarge-1 ml-4">Admin2L</div>
+				</div>
+				<div class="sidebar_block suggest-box mt-4">
+					<div class="data-box"><img class="avatar ml-4" src="https://via.placeholder.com/48">
+						<div class="ml-4 avatar-title flex-column"><a class="d-block no-decor fg-white" href="#"><span class="text-medium">Loc Thanh</span></a>
+							<p class="m-0"><span class="fg-green mr-2">●</span><span class="text-small">online</span></p>
+						</div>
+					</div><img class="avatar holder" src="https://via.placeholder.com/36">
+				</div>
+				<div class="sidebar_block suggest-box">
+					<input type="text" data-role="input" data-clear-button="false" data-search-button="true">
+					<button class="holder bg-blue-hover fg-white"><span class="mdi mdi-magnify"></span></button>
+				</div>
+				<div class="sidebar_nav-title text-medium my-2 px-3 enlarge-3">System</div>
+				<ul class="navview-menu bg-blue bg-blue-hover">
+					<li><a href="index.html"><span class="icon"><span class="mif-meter"></span></span><span class="caption">Dashboard</span></a></li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-versions"></span></span><span class="caption">Sample Pages</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">Pages</li>
+						</ul>
+					</li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-devices"></span></span><span class="caption">Forms</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">Forms</li>
+							<li><a href="form-basic.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Basic elements</span></a></li>
+							<li><a href="form-extended.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Extended elements</span></a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-table"></span></span><span class="caption">Tables</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">Tables</li>
+							<li><a href="table-classes.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Table classes</span></a></li>
+							<li><a href="table-components.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Table components</span></a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-air"></span></span><span class="caption">UI Elements</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">UI Elements</li>
+							<li><a href="ui-colors.html"><span class="icon"><span class="mif-paint"></span></span><span class="caption">Colors</span></a></li>
+							<li><a href="ui-typography.html"><span class="icon"><span class="mif-bold"></span></span><span class="caption">Typography</span></a></li>
+							<li><a href="ui-buttons.html"><span class="icon"><span class="mif-apps"></span></span><span class="caption">Buttons</span></a></li>
+							<li><a href="ui-tabs.html"><span class="icon"><span class="mif-open-book"></span></span><span class="caption">Accordion & Tabs</span></a></li>
+							<li><a href="ui-treeview.html"><span class="icon"><span class="mif-tree"></span></span><span class="caption">TreeView</span></a></li>
+							<li><a href="ui-listview.html"><span class="icon"><span class="mif-list"></span></span><span class="caption">ListView</span></a></li>
+							<li><a href="ui-list.html"><span class="icon"><span class="mif-list2"></span></span><span class="caption">List component</span></a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-comment"></span></span><span class="caption">Information</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">Information</li>
+							<li><a href="info-hints.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Hints</span></a></li>
+							<li><a href="info-dialog.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Dialogs</span></a></li>
+							<li><a href="info-infobox.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">InfoBox</span></a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="data-box w-100 text-center reduce-2 p-2 border-top bd-grayMouse" style="position: absolute; bottom: 0">
+					<div>© 2020 <a class="no-decor fg-white" href="#">MiraHuman Co., LTD</a></div>
+				</div>
+			</section>
+			<section class="navview-content">
+				<section class="appbar_wrapper pos-absolute bg-white shadow-1" data-role="appbar"><a class="app-bar-item d-block d-none-lg" id="paneToggle" href="#"><span class="mdi mdi-menu"></span></a>
+					<div class="app-bar-container ml-auto"><a class="app-bar-item" href="#"><span class="mif-envelop"></span><span class="badge bg-green fg-white mt-2 mr-1">4</span></a>
+						<div class="app-bar-container"><a class="app-bar-item" href="#"><span class="mif-bell"></span><span class="badge bg-orange fg-white mt-2 mr-1">10</span></a>
+							<div class="pos-absolute put-sw mt-1 shadow-1 bg-white" data-role="collapse" data-collapsed="true" style="line-height: 1.5">
+								<ul class="feed-list p-0" style="width: 200px">
+									<li class="title px-4 h-auto">Notifications</li>
+									<li class="px-4 py-2 h-auto"><a href="#">
+											<div class="label">Lorem ipsum dolor sit amet.</div>
+											<div class="second-label">10 min ago</div></a></li>
+									<li class="px-4 py-2 h-auto"><a href="#">
+											<div class="label">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+											<div class="second-label">10 min ago</div></a></li>
+									<li class="px-4 py-2 h-auto"><a href="#">
+											<div class="label">Lorem ipsum dolor sit amet.</div>
+											<div class="second-label">10 min ago</div></a></li>
+									<li class="px-4 py-2 h-auto text-center"><a href="#">View all</a></li>
+								</ul>
+							</div>
+						</div><a class="app-bar-item" href="#"><span class="mif-flag"></span><span class="badge bg-red fg-white mt-2 mr-1">9</span></a>
+						<div class="app-bar-container"><a class="app-bar-item" href="#"><img class="appbar_avatar-thumb" src="https://via.placeholder.com/32"><span class="ml-2 d-none d-block-sm">Loc Thanh</span></a>
+							<div class="pos-absolute put-se mt-1 shadow-1" data-role="collapse" data-collapsed="true" style="line-height: 1.5">
+								<div class="bg-lightBlue fg-white p-2 text-center"><img class="appbar_avatar" src="https://via.placeholder.com/48"><a class="d-block h4 mt-2 mb-0" href="#">Loc Thanh</a><span>admin</span></div>
+								<div class="bg-white d-flex flex-justify-between p-2">
+									<button class="button flat-button">Profile</button>
+									<button class="button flat-button">Activity log</button>
+								</div>
+								<div class="bg-white d-flex flex-justify-between flex-equal-items p-2 bg-light">
+									<button class="button mr-1">Settings</button>
+									<button class="button ml-1">Sign out</button>
+								</div>
+							</div>
+						</div><a class="app-bar-item" href="#"><span class="mif-cogs"></span></a>
+					</div>
+				</section>
+				<section class="content_wrapper bg-light">
+					<aside class="container">
+						<div class="row border-bottom bd-lightGray mt-4">
+							<div class="col-md-4 text-center text-left-md">
+								<h3 class="content_title m-0">Table <small>components</small></h3>
+							</div>
+							<div class="col-md-8 d-flex flex-justify-center flex-justify-end-md">
+								<ul class="breadcrumbs bg-transparent m-0">
+									<li class="page-item"><a class="page-link" href="#"><span class="mdi mdi-home"></span></a></li>
+									<li class="page-item"><a class="page-link" href="#">Dashboard</a></li>
+								</ul>
+							</div>
+						</div>
+						<section class="tables_wrapper">
+							<aside class="tables_components">
+								<div class="row">
+									<div class="col-12">
+										<div class="bg-white p-4">
+											<h6 class="fg-cobalt"><sup>*</sup>Custom layout table</h6>
+											<div class="custom_table-wrapper">
+												<div class="custom_table-top d-flex flex-wrap flex-nowrap-lg flex-align-center flex-justify-center flex-justify-start-lg mb-2">
+													<div class="custom_table-search w-100 w-auto-lg mb-2 mb-0-lg"></div>
+													<div class="custom_table-rows mx-2"></div>
+													<div class="custom_table-actions">
+														<script>
+															function exportTabletoCSV() {
+																$('#table1').data('table').export('CSV', 'all', 'table-export.csv')
+															}
+														</script>
+														<button class="button alert" onclick="exportTabletoCSV()"><span class="mif-file-excel"> Export</span></button>
+														<button class="button square" onclick="$('#table1').data('table').toggleInspector()"><span class="mif-cog"></span></button>
+													</div>
+												</div>
+												<table class="table table-border cell-border" id="table1" data-role="table" data-search-wrapper=".custom_table-search" data-rows-wrapper=".custom_table-rows" data-info-wrapper=".custom_table-info" data-pagination-wrapper=".custom_table-pagination" data-pagination-short-mode="true" data-horizontal-scroll="true" data-check="true" data-check-style="2" data-rownum="true">
+													<thead>
+														<tr>
+															<th class="sortable-column" data-sort-dir="asc" data-format="number" data-name="id">ID</th>
+															<th class="sortable-column" data-name="name">Name</th>
+															<th class="sortable-column" data-format="date" data-format-mask="%d-%m-%y" data-name="start">Start</th>
+															<th class="sortable-column" data-format="int" data-name="age">Age</th>
+															<th class="sortable-column" data-format="money" data-name="salary">Salary</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>Bill</td>
+															<td>31-12-2017</td>
+															<td>63</td>
+															<td>$7,843</td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>Steve</td>
+															<td>13-06-2018</td>
+															<td>63</td>
+															<td>$7,843</td>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>Larry</td>
+															<td>31-12-2017</td>
+															<td>28</td>
+															<td>$8,877</td>
+														</tr>
+														<tr>
+															<td>4</td>
+															<td>Troy</td>
+															<td>11-03-2019</td>
+															<td>26</td>
+															<td>$5,405</td>
+														</tr>
+														<tr>
+															<td>5</td>
+															<td>Kennedy</td>
+															<td>11-02-2018</td>
+															<td>60</td>
+															<td>$5,780</td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>Cullen</td>
+															<td>23-09-2017</td>
+															<td>62</td>
+															<td>$5,482</td>
+														</tr>
+														<tr>
+															<td>7</td>
+															<td>Eric</td>
+															<td>04-01-2019</td>
+															<td>53</td>
+															<td>$6,490</td>
+														</tr>
+														<tr>
+															<td>8</td>
+															<td>Jakeem</td>
+															<td>29-06-2018</td>
+															<td>18</td>
+															<td>$6,084</td>
+														</tr>
+														<tr>
+															<td>9</td>
+															<td>Kieran</td>
+															<td>11-04-2019</td>
+															<td>18</td>
+															<td>$5,043</td>
+														</tr>
+														<tr>
+															<td>10</td>
+															<td>Stephen</td>
+															<td>23-09-2017</td>
+															<td>54</td>
+															<td>$5,895</td>
+														</tr>
+														<tr>
+															<td>11</td>
+															<td>Cody</td>
+															<td>26-03-2018</td>
+															<td>65</td>
+															<td>$8,558</td>
+														</tr>
+														<tr>
+															<td>12</td>
+															<td>Cody</td>
+															<td>26-03-2018</td>
+															<td>65</td>
+															<td>$8,558</td>
+														</tr>
+														<tr>
+															<td>13</td>
+															<td>Otto</td>
+															<td>26-03-2018</td>
+															<td>25</td>
+															<td>$8,124</td>
+														</tr>
+														<tr>
+															<td>14</td>
+															<td>Timon</td>
+															<td>14-12-2017</td>
+															<td>39</td>
+															<td>$5,031</td>
+														</tr>
+														<tr>
+															<td>15</td>
+															<td>Owen</td>
+															<td>25-05-2018</td>
+															<td>24</td>
+															<td>$6,595</td>
+														</tr>
+														<tr>
+															<td>16</td>
+															<td>Tobias</td>
+															<td>02-03-2019</td>
+															<td>21</td>
+															<td>$7,926</td>
+														</tr>
+														<tr>
+															<td>17</td>
+															<td>Logan</td>
+															<td>17-02-2018</td>
+															<td>24</td>
+															<td>$8,062</td>
+														</tr>
+														<tr>
+															<td>18</td>
+															<td>Laith</td>
+															<td>02-04-2019</td>
+															<td>45</td>
+															<td>$6,886</td>
+														</tr>
+														<tr>
+															<td>19</td>
+															<td>Damian</td>
+															<td>03-01-2018</td>
+															<td>35</td>
+															<td>$9,852</td>
+														</tr>
+														<tr>
+															<td>20</td>
+															<td>Wallace</td>
+															<td>22-05-2018</td>
+															<td>28</td>
+															<td>$8,678</td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="custom_table-bottom d-flex flex-wrap flex-nowrap-lg flex-align-center flex-justify-center flex-justify-start-lg mb-2">
+													<div class="custom_table-info w-100 w-auto-lg mb-2 mb-0-lg"></div>
+													<div class="custom_table-pagination ml-auto-lg"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</aside>
+						</section>
+					</aside>
+				</section>
+			</section>
+		</main>
+		<script src="./js/libraries-ui.min.js"></script>
+		<script src="./js/all.min.js"></script>
+	</body>
+</html>

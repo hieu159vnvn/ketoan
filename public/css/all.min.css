@@ -1,0 +1,302 @@
+html, body{
+    overflow: hidden;
+    font-family: Arial !important;
+}
+main.compacted .sidebar_header-title,
+main.compacted .sidebar_nav-title {
+    display: none
+}
+
+.sidebar_block .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 99px
+}
+
+.sidebar_block .avatar.holder {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto
+}
+
+.sidebar_block .avatar.holder:hover {
+    background: none
+}
+
+.appbar_avatar {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto
+}
+
+.appbar_avatar-thumb {
+    width: 32px;
+    height: 32px;
+    border-radius: 99px
+}
+
+.dashboard_block .user-list {
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none inside
+}
+
+.dashboard_block .user-list li {
+    flex-shrink: 0;
+    width: 25%;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center
+}
+
+.dashboard_block .user-list .avatar {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%
+}
+
+.template_table--bottom,
+.template_table--top {
+    -webkit-box-align: start;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start
+}
+
+.template_table .info-wrapper,
+.template_table .pagination {
+    margin-top: 1rem
+}
+
+.template_table .sortable-column {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.template_table .sortable-column:after {
+    content: ""
+}
+
+.template_table .rows-wrapper,
+.template_table .search-wrapper {
+    margin-left: auto
+}
+
+.template_table .info-wrapper,
+.template_table .search-wrapper {
+    width: 100%
+}
+
+.template_table .pagination {
+    margin-bottom: 0
+}
+
+.template_table .delete,
+.template_table .edit {
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer
+}
+
+.template_table .delete:before,
+.template_table .edit:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: Material Design Icons;
+    font-size: inherit;
+    line-height: 1;
+    text-rendering: auto;
+    content: "\F3EB"
+}
+
+.template_table .edit {
+    margin-right: 1rem;
+    color: #1ba1e2
+}
+
+.template_table .edit:before {
+    content: "\F3EB"
+}
+
+.template_table .delete {
+    color: #ce352c
+}
+
+.template_table .delete:before {
+    content: "\FB64"
+}
+
+.template_table table th {
+    padding-right: 10px !important
+}
+
+.template_table table th[class*=sort-] {
+    padding-right: 30px !important
+}
+
+@media screen and (min-width:768px) {
+
+    .template_table--bottom,
+    .template_table--top {
+        -webkit-box-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .template_table .info-wrapper,
+    .template_table .pagination {
+        margin: 0
+    }
+
+    .template_table .info-wrapper,
+    .template_table .search-wrapper {
+        width: auto
+    }
+}
+
+.forms_extended .date_picker .date-wrapper,
+.forms_extended .time_picker .time-wrapper {
+    border: none
+}
+
+.forms_extended .custom_checkbox input[type=checkbox]:checked~.check {
+    background: #00aff0 !important
+}
+
+.forms_extended .custom_checkbox2 .check,
+.forms_extended .custom_checkbox2 .check:before,
+.forms_extended .custom_checkbox .check {
+    border-color: #00aff0 !important
+}
+
+.forms_extended .custom_radio input[type=radio]:checked~.check {
+    background: #00aff0 !important
+}
+
+.forms_extended .custom_radio2 .check,
+.forms_extended .custom_radio .check {
+    border-color: #00aff0 !important
+}
+
+.forms_extended .custom_radio2 .check:before {
+    border-color: #00aff0 !important;
+    background: #00aff0 !important
+}
+
+.forms_extended .custom_switch .check {
+    border-color: #00aff0 !important
+}
+
+.forms_extended .custom_switch .check:after {
+    border-color: #00aff0 !important;
+    background: #00aff0 !important
+}
+
+.forms_extended .custom_switch input[type=checkbox]:checked~.check {
+    background: #00aff0 !important
+}
+
+.forms_extended .custom_switch input[type=checkbox]:checked~.check:after {
+    border-color: #fff !important;
+    background: #fff !important
+}
+
+.custom_table-pagination ul {
+    margin-bottom: 0
+}
+
+.listview-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -6px;
+    margin-left: -6px
+}
+
+main .navview-content {
+    height: 100%;
+    padding-top: 52px
+}
+
+main .content_wrapper {
+    height: 100%;
+    overflow-y: auto
+}
+
+.custom_table_a th {
+    white-space: nowrap
+}
+.bg-table-1{
+    background-color: #8FB6DF;
+    text-align: center!important;
+}
+.bg-table-2{
+    background-color: #F1DBDB;
+    text-align: center!important;
+
+}
+.bg-table-3{
+    background-color: #C5D7A0;
+    text-align: center!important;
+
+}
+.bg-table-4{
+    background-color: #FFFD4A;
+    text-align: center!important;
+
+}
+#tablenghiepdoan{
+    border: 1px solid #dfdfdf;
+}
+#tablenghiepdoan_filter{
+    display: flex;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.nghiepdoan_a{
+    color:#1D1D1D;
+}
+.nghiepdoan_a:hover{
+    font-weight: bold;
+    color:#1D1D1D;
+    text-decoration: none;
+}
+.bg-custom{
+    background-color: #333!important;
+}
+.navview .navview-menu li a:hover{
+    color:#000;
+}
+#table-tienquanly{
+    border: 1px solid #dfdfdf;
+}
+.table-black,.table-black td{
+    border:1px solid #000;
+}
+.disable{
+    pointer-events:none;
+}
+.login-infobox_wrapper .closer{-webkit-box-align:center;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-shadow:0 0 4px 0 rgba(0,0,0,.35);display:flex;top:-12px;right:-12px;align-items:center;justify-content:center;width:24px;height:24px;border-radius:99px;background:#f3f3f3;box-shadow:0 0 4px 0 rgba(0,0,0,.35);color:#333}
+#tableprint td{
+    padding: 0!important;
+}
+
+

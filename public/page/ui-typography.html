@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/libraries-ui.min.css">
+		<link rel="stylesheet" href="./css/all.min.css">
+		<title>UI Elements</title>
+	</head>
+	<body class="m4-cloak h-vh-100">
+		<main class="navview" data-role="navview" data-toggle="#paneToggle" data-expanded="xl" data-compact="lg" data-active-state="true">
+			<section class="sidebar_wrapper navview-pane bg-blue fg-white z-5">
+				<div class="sidebar_header d-flex flex-align-center">
+					<button class="pull-button bg-blue-hover"><span class="mdi mdi-menu fg-white"></span></button>
+					<div class="sidebar_header-title text-bold enlarge-1 ml-4">Admin2L</div>
+				</div>
+				<div class="sidebar_block suggest-box mt-4">
+					<div class="data-box"><img class="avatar ml-4" src="https://via.placeholder.com/48">
+						<div class="ml-4 avatar-title flex-column"><a class="d-block no-decor fg-white" href="#"><span class="text-medium">Loc Thanh</span></a>
+							<p class="m-0"><span class="fg-green mr-2">●</span><span class="text-small">online</span></p>
+						</div>
+					</div><img class="avatar holder" src="https://via.placeholder.com/36">
+				</div>
+				<div class="sidebar_block suggest-box">
+					<input type="text" data-role="input" data-clear-button="false" data-search-button="true">
+					<button class="holder bg-blue-hover fg-white"><span class="mdi mdi-magnify"></span></button>
+				</div>
+				<div class="sidebar_nav-title text-medium my-2 px-3 enlarge-3">System</div>
+				<ul class="navview-menu bg-blue bg-blue-hover">
+					<li><a href="index.html"><span class="icon"><span class="mif-meter"></span></span><span class="caption">Dashboard</span></a></li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-versions"></span></span><span class="caption">Sample Pages</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">Pages</li>
+						</ul>
+					</li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-devices"></span></span><span class="caption">Forms</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">Forms</li>
+							<li><a href="form-basic.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Basic elements</span></a></li>
+							<li><a href="form-extended.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Extended elements</span></a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-table"></span></span><span class="caption">Tables</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">Tables</li>
+							<li><a href="table-classes.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Table classes</span></a></li>
+							<li><a href="table-components.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Table components</span></a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-air"></span></span><span class="caption">UI Elements</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">UI Elements</li>
+							<li><a href="ui-colors.html"><span class="icon"><span class="mif-paint"></span></span><span class="caption">Colors</span></a></li>
+							<li><a href="ui-typography.html"><span class="icon"><span class="mif-bold"></span></span><span class="caption">Typography</span></a></li>
+							<li><a href="ui-buttons.html"><span class="icon"><span class="mif-apps"></span></span><span class="caption">Buttons</span></a></li>
+							<li><a href="ui-tabs.html"><span class="icon"><span class="mif-open-book"></span></span><span class="caption">Accordion & Tabs</span></a></li>
+							<li><a href="ui-treeview.html"><span class="icon"><span class="mif-tree"></span></span><span class="caption">TreeView</span></a></li>
+							<li><a href="ui-listview.html"><span class="icon"><span class="mif-list"></span></span><span class="caption">ListView</span></a></li>
+							<li><a href="ui-list.html"><span class="icon"><span class="mif-list2"></span></span><span class="caption">List component</span></a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-toggle" href="#"><span class="icon"><span class="mif-comment"></span></span><span class="caption">Information</span></a>
+						<ul class="navview-menu stay-open bg-blue bg-blue-hover" data-role="dropdown">
+							<li class="item-header">Information</li>
+							<li><a href="info-hints.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Hints</span></a></li>
+							<li><a href="info-dialog.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">Dialogs</span></a></li>
+							<li><a href="info-infobox.html"><span class="icon"><span class="mif-spinner2"></span></span><span class="caption">InfoBox</span></a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="data-box w-100 text-center reduce-2 p-2 border-top bd-grayMouse" style="position: absolute; bottom: 0">
+					<div>© 2020 <a class="no-decor fg-white" href="#">MiraHuman Co., LTD</a></div>
+				</div>
+			</section>
+			<section class="navview-content">
+				<section class="appbar_wrapper pos-absolute bg-white shadow-1" data-role="appbar"><a class="app-bar-item d-block d-none-lg" id="paneToggle" href="#"><span class="mdi mdi-menu"></span></a>
+					<div class="app-bar-container ml-auto"><a class="app-bar-item" href="#"><span class="mif-envelop"></span><span class="badge bg-green fg-white mt-2 mr-1">4</span></a>
+						<div class="app-bar-container"><a class="app-bar-item" href="#"><span class="mif-bell"></span><span class="badge bg-orange fg-white mt-2 mr-1">10</span></a>
+							<div class="pos-absolute put-sw mt-1 shadow-1 bg-white" data-role="collapse" data-collapsed="true" style="line-height: 1.5">
+								<ul class="feed-list p-0" style="width: 200px">
+									<li class="title px-4 h-auto">Notifications</li>
+									<li class="px-4 py-2 h-auto"><a href="#">
+											<div class="label">Lorem ipsum dolor sit amet.</div>
+											<div class="second-label">10 min ago</div></a></li>
+									<li class="px-4 py-2 h-auto"><a href="#">
+											<div class="label">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+											<div class="second-label">10 min ago</div></a></li>
+									<li class="px-4 py-2 h-auto"><a href="#">
+											<div class="label">Lorem ipsum dolor sit amet.</div>
+											<div class="second-label">10 min ago</div></a></li>
+									<li class="px-4 py-2 h-auto text-center"><a href="#">View all</a></li>
+								</ul>
+							</div>
+						</div><a class="app-bar-item" href="#"><span class="mif-flag"></span><span class="badge bg-red fg-white mt-2 mr-1">9</span></a>
+						<div class="app-bar-container"><a class="app-bar-item" href="#"><img class="appbar_avatar-thumb" src="https://via.placeholder.com/32"><span class="ml-2 d-none d-block-sm">Loc Thanh</span></a>
+							<div class="pos-absolute put-se mt-1 shadow-1" data-role="collapse" data-collapsed="true" style="line-height: 1.5">
+								<div class="bg-lightBlue fg-white p-2 text-center"><img class="appbar_avatar" src="https://via.placeholder.com/48"><a class="d-block h4 mt-2 mb-0" href="#">Loc Thanh</a><span>admin</span></div>
+								<div class="bg-white d-flex flex-justify-between p-2">
+									<button class="button flat-button">Profile</button>
+									<button class="button flat-button">Activity log</button>
+								</div>
+								<div class="bg-white d-flex flex-justify-between flex-equal-items p-2 bg-light">
+									<button class="button mr-1">Settings</button>
+									<button class="button ml-1">Sign out</button>
+								</div>
+							</div>
+						</div><a class="app-bar-item" href="#"><span class="mif-cogs"></span></a>
+					</div>
+				</section>
+				<section class="content_wrapper bg-light">
+					<aside class="container">
+						<div class="row border-bottom bd-lightGray mt-4">
+							<div class="col-md-4 text-center text-left-md">
+								<h3 class="content_title m-0">UI Elements <small>Typography</small></h3>
+							</div>
+							<div class="col-md-8 d-flex flex-justify-center flex-justify-end-md">
+								<ul class="breadcrumbs bg-transparent m-0">
+									<li class="page-item"><a class="page-link" href="#"><span class="mdi mdi-home"></span></a></li>
+									<li class="page-item"><a class="page-link" href="#">Dashboard</a></li>
+								</ul>
+							</div>
+						</div>
+						<section class="typography_wrapper">
+							<aside class="typography_content">
+								<div class="row">
+									<div class="col-xl-6">
+										<div class="bg-white p-4 h-100 no-scroll">
+											<h5>Super headlines</h5>
+											<hr>
+											<table class="table row-border">
+												<tbody>
+													<tr>
+														<td><span class="display4">.display4</span></td>
+													</tr>
+													<tr>
+														<td><span class="display3">.display3</span></td>
+													</tr>
+													<tr>
+														<td><span class="display2">.display2</span></td>
+													</tr>
+													<tr>
+														<td><span class="display1">.display1</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-xl-6 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Headlines</h5>
+											<hr>
+											<table class="table row-border">
+												<tbody>
+													<tr>
+														<td><code>&lt;h1&gt;</code></td>
+														<td class="h1 d-none d-block-sm">.h1 Heading</td>
+														<td>48px</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h2&gt;</code></td>
+														<td class="h2 d-none d-block-sm">.h2 Heading</td>
+														<td>32px</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h3&gt;</code></td>
+														<td class="h3 d-none d-block-sm">.h3 Heading</td>
+														<td>28px</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h4&gt;</code></td>
+														<td class="h4 d-none d-block-sm">.h4 Heading</td>
+														<td>24px</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h5&gt;</code></td>
+														<td class="h5 d-none d-block-sm">.h5 Heading</td>
+														<td>20px</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h6&gt;</code></td>
+														<td class="h6 d-none d-block-sm">.h6 Heading</td>
+														<td>18px</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-xl-6 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Heading secondary text</h5>
+											<hr>
+											<table class="table row-border">
+												<tbody>
+													<tr>
+														<td><code>&lt;h1&gt;</code></td>
+														<td>
+															<h1>Header <small>Secondary</small></h1>
+														</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h2&gt;</code></td>
+														<td>
+															<h2>Header <small>Secondary</small></h2>
+														</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h3&gt;</code></td>
+														<td>
+															<h3>Header <small>Secondary</small></h3>
+														</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h4&gt;</code></td>
+														<td>
+															<h4>Header <small>Secondary</small></h4>
+														</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h5&gt;</code></td>
+														<td>
+															<h5>Header <small>Secondary</small></h5>
+														</td>
+													</tr>
+													<tr>
+														<td><code>&lt;h6&gt;</code></td>
+														<td>
+															<h6>Header <small>Secondary</small></h6>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-xl-6 mt-4 mt-0-xl">
+										<div class="bg-white p-4 h-100">
+											<h5>Heading secondary text</h5>
+											<hr>
+											<p>You can use the mark tag to 
+												<mark>highlight</mark> text.
+											</p>
+											<p>
+												<del>This line of text is meant to be treated as deleted text.</del>
+											</p>
+											<p>
+												<s>This line of text is meant to be treated as no longer accurate.</s>
+											</p>
+											<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+											<p>
+												<u>This line of text will render as underlined</u>
+											</p>
+											<p><small>This line of text is meant to be treated as fine print.</small></p>
+											<p><strong>This line rendered as bold text.</strong></p>
+											<p><em>This line rendered as italicized text.</em></p>
+										</div>
+									</div>
+									<div class="col-xl-12 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Paragraph</h5>
+											<hr>
+											<div class="row">
+												<div class="col-xl-12">
+													<h6>Default</h6>
+													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+												</div>
+												<div class="col-xl-12">
+													<h6>Indent</h6>
+													<p class="indent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+												</div>
+												<div class="col-xl-12">
+													<h6>Indent letter</h6>
+													<p class="indent-letter">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+												</div>
+												<div class="col-xl-6">
+													<h6>Leader</h6>
+													<p class="text-leader">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+												</div>
+												<div class="col-xl-6">
+													<h6>Leader2</h6>
+													<p class="text-leader2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+												</div>
+												<div class="col-xl-6">
+													<h6>Secondary</h6>
+													<p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+												</div>
+												<div class="col-xl-6">
+													<h6>Small</h6>
+													<p class="text-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Blockquote</h5>
+											<blockquote>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><small>Someone famous
+													<cite title="Source Title">Source Title</cite></small>
+											</blockquote>
+											<blockquote class="right-side">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><small>Someone famous
+													<cite title="Source Title">Source Title</cite></small>
+											</blockquote>
+										</div>
+									</div>
+									<div class="col-xl-4 mt-4 mt-0-xl">
+										<div class="bg-white p-4 h-100">
+											<h5>Text transform</h5>
+											<hr>
+											<p class="text-lower">text-lower</p>
+											<p class="text-upper">text-upper</p>
+											<p class="text-cap">text-cap</p>
+										</div>
+									</div>
+									<div class="col-xl-4 mt-4 mt-0-xl">
+										<div class="bg-white p-4 h-100">
+											<h5>Text alignment</h5>
+											<hr>
+											<p class="text-left">Left aligned text on all viewport sizes.</p>
+											<p class="text-center">Center aligned text on all viewport sizes.</p>
+											<p class="text-right">Right aligned text on all viewport sizes.</p>
+										</div>
+									</div>
+									<div class="col-xl-6 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Remark</h5>
+											<hr>
+											<div class="d-flex flex-wrap">
+												<div class="m-1 remark ml-0">Lorem Ipsum is simply dummy text.</div>
+												<div class="m-1 remark alert">Lorem Ipsum is simply dummy text.</div>
+												<div class="m-1 remark success">Lorem Ipsum is simply dummy text.</div>
+												<div class="m-1 remark info">Lorem Ipsum is simply dummy text.</div>
+												<div class="m-1 remark warning">Lorem Ipsum is simply dummy text.</div>
+												<div class="m-1 remark primary">Lorem Ipsum is simply dummy text.</div>
+												<div class="m-1 remark secondary">Lorem Ipsum is simply dummy text.</div>
+												<div class="m-1 remark dark">Lorem Ipsum is simply dummy text.</div>
+												<div class="m-1 remark yellow">Lorem Ipsum is simply dummy text.</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-6 mt-4 mt-0-xl">
+										<div class="bg-white p-4 h-100">
+											<h5>Font weight</h5>
+											<hr>
+											<table class="table striped row-border">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Weight</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="text-ultralight">.text-ultralight</td>
+														<td>100</td>
+													</tr>
+													<tr>
+														<td class="text-light">.text-light</td>
+														<td>200</td>
+													</tr>
+													<tr>
+														<td class="text-normal">.text-normal</td>
+														<td>400</td>
+													</tr>
+													<tr>
+														<td class="text-medium">.text-medium</td>
+														<td>500</td>
+													</tr>
+													<tr>
+														<td class="text-bold">.text-bold</td>
+														<td>700</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-xl-6 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Description vertical</h5>
+											<hr>
+											<dl>
+												<dt>Description lists</dt>
+												<dd>A description list is perfect for defining terms.</dd>
+												<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem eveniet quaerat sapiente at dicta quidem neque omnis modi accusantium.</dd>
+												<dt>Description lists</dt>
+												<dd>A description list is perfect for defining terms.</dd>
+												<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem eveniet quaerat sapiente at dicta quidem neque omnis modi accusantium.</dd>
+											</dl>
+										</div>
+										<div class="bg-white p-4 mt-6 mt-3-xl">
+											<h5>Description horizontal</h5>
+											<hr>
+											<dl class="horizontal">
+												<dt>Description lists</dt>
+												<dd>A description list is perfect for defining terms.</dd>
+												<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem eveniet quaerat sapiente at dicta quidem neque omnis modi accusantium.</dd>
+												<dt>Description lists</dt>
+												<dd>A description list is perfect for defining terms.</dd>
+												<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem eveniet quaerat sapiente at dicta quidem neque omnis modi accusantium.</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="col-xl-6 mt-4 mt-0-xl">
+										<div class="bg-white p-4 h-100">
+											<h5>Un-styled list</h5>
+											<hr>
+											<ul class="unstyled-list">
+												<li>Lorem ipsum dolor sit amet.</li>
+												<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+												<li>Lorem ipsum dolor sit.
+													<ul class="unstyled-list">
+														<li>Lorem ipsum dolor sit amet.</li>
+														<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+													</ul>
+												</li>
+												<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+											</ul>
+											<h5 class="mt-10-xl">Inline list</h5>
+											<hr>
+											<ul class="inline-list">
+												<li>Dashboard</li>
+												<li>Forms</li>
+												<li>Tables</li>
+												<li>UI Elements</li>
+												<li>Wizards</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-xl-4 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Ordered list</h5>
+											<hr>
+											<ol>
+												<li>Lorem ipsum dolor sit amet.</li>
+												<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+												<li>Lorem ipsum dolor sit.
+													<ol>
+														<li>Lorem ipsum dolor sit amet.</li>
+														<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+													</ol>
+												</li>
+												<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+											</ol>
+										</div>
+									</div>
+									<div class="col-xl-4 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Unordered list</h5>
+											<hr>
+											<ul>
+												<li>Lorem ipsum dolor sit amet.</li>
+												<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+												<li>Lorem ipsum dolor sit.
+													<ul>
+														<li>Lorem ipsum dolor sit amet.</li>
+														<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+													</ul>
+												</li>
+												<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-xl-4 mt-4 mt-0-xl">
+										<div class="bg-white p-4">
+											<h5>Step list</h5>
+											<hr>
+											<ul class="step-list">
+												<li>
+													<h6>First step</h6>
+													<p>Lorem ipsum dolor sit amet.</p>
+												</li>
+												<li>
+													<h6>Second step</h6>
+													<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+												</li>
+												<li>
+													<h6>Third step</h6>
+													<p>Lorem ipsum dolor sit.</p>
+												</li>
+												<li>
+													<h6>Four step</h6>
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</aside>
+						</section>
+					</aside>
+				</section>
+			</section>
+		</main>
+		<script src="./js/libraries-ui.min.js"></script>
+		<script src="./js/all.min.js"></script>
+	</body>
+</html>
